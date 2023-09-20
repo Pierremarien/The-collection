@@ -105,10 +105,10 @@ const collection = [
         name: "The Big Lebowski",
         director: "Joel Coen",
         releaseYear: 1998,
-        picture: "link/to/a/picture",
+        picture: "assets/img/the_big_lebowski.jpg",
         genre: ["Comedie", "Policier"],
         cast: [
-          "Jeff Bridges",
+          "Jef  gif Bridges",
           "John Goodman",
           "Julianne Moore",
           "Steve Buscemi",
@@ -118,7 +118,7 @@ const collection = [
         name: "Orange Mecanique",
         director: "Stanley Kubrick",
         releaseYear: 1971,
-        picture: "link/to/a/picture",
+        picture: "assets/img/orange.jpg",
         genre: ["Crime", "Drama"],
         cast: [
           "Malcolm McDowell",
