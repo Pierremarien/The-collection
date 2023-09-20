@@ -159,7 +159,7 @@ function filterMoviesByGenre(genre) {
   boutonsSupprimer.forEach((bouton) => {
     bouton.addEventListener("click", function () {
       let parent = bouton.parentNode.parentNode;
-      let mySound = new Audio('assets/helicoptercut.mp3')
+      let mySound = new Audio('assets/helicopter.mp3')
       let stopSound = new Audio('assets/stop.mp3')
       mySound.play()
       parent.style.animation = "rotateAnimation 4s linear forwards";
