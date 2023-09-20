@@ -159,13 +159,17 @@ function filterMoviesByGenre(genre) {
   boutonsSupprimer.forEach((bouton) => {
     bouton.addEventListener("click", function () {
       let parent = bouton.parentNode.parentNode;
+      let mySound = new Audio('assets/helicoptercut.mp3')
+      let stopSound = new Audio('assets/stop.mp3')
+      mySound.play()
       parent.style.animation = "rotateAnimation 4s linear forwards";
       setTimeout(() => {
-        parent.style.animation = "translateAnimation 0.3s linear forwards";
+        parent.style.animation = "translateAnimation 1.6s linear forwards";
+        stopSound.play();
       }, 4000);
       setTimeout(() => {
         parent.remove();
-      }, 4300);
+      }, 5600);
     });
   });
 }
