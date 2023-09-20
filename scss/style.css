@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Monoton&display=swap");
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 20px 10px;
+  row-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  justify-content: center;
+}
+header nav button {
+  border-radius: 20px;
+  background-color: #9723c9;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+header nav button:hover {
+  background-color: #a388ee;
+  transform: scale(1.05);
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+}
+header h1 {
+  font-family: "Monoton", cursive;
+  font-size: 40px;
+  padding-top: 50px;
+  text-align: center;
+}
+header p {
+  font-family: "Lobster", cursive;
+  font-size: 18px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+body {
+  background-color: #87ceeb;
+}
+
+article {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+article .card {
+  width: 330px;
+  height: 650px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+  font-family: "Lobster", cursive;
+  background-color: #daf5f0;
+  justify-content: space-between;
+}
+article .card .content {
+  display: flex;
+  flex-direction: column;
+}
+article .card .content figure {
+  width: 330px;
+  height: 350px;
+  padding-bottom: 20px;
+}
+article .card .content figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+article .card .content .genre {
+  border: 1px solid black;
+  padding: 10px 10px;
+  border-radius: 5px;
+  background-color: #FF69b4;
+  color: white;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+  align-self: center;
+  cursor: pointer;
+}
+article .card .content .titre {
+  font-family: "Monoton", cursive;
+  color: #9723c9;
+  font-size: 28px;
+  padding: 15px 5px;
+  text-align: center;
+}
+article .card .content .info {
+  padding: 5px 10px;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+article .card .button {
+  cursor: pointer;
+  width: 30px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+article .card .button .trash {
+  width: 100%;
+  height: 100%;
+}
+article .card .button:hover {
+  width: 35px;
+  height: 45px;
+}
+article .card:hover {
+  transform: scale(1.03);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+article .card:last-child {
+  margin-bottom: 20px;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-1945deg);
+  }
+}
+@keyframes translateAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(50px);
+  }
+}
+@media screen and (min-width: 768px) {
+  article {
+    flex-direction: row;
+    gap: 25px;
+    padding-bottom: 30px;
+  }
+  article .card:last-child {
+    margin-bottom: 0px;
+  }
+}/*# sourceMappingURL=style.css.map */

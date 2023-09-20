@@ -1,0 +1,122 @@
+article {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    .card {
+        width: 330px;
+        height: 650px;
+        border: 2px solid black;
+        border-radius: 10px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        overflow: hidden;
+        font-family: 'Lobster', cursive;
+        background-color: #daf5f0;
+        justify-content: space-between;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+
+            figure {
+                width: 330px;
+                height: 350px;
+                padding-bottom: 20px;
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .genre {
+                border: 1px solid black;
+                padding: 10px 10px;
+                border-radius: 5px;
+                background-color: #FF69b4;
+                color: white;
+                box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+                align-self: center;
+                cursor: pointer;
+            }
+
+            .titre {
+                font-family: 'Monoton', cursive;
+                color: #9723c9;
+                font-size: 28px;
+                padding: 15px 5px;
+                text-align: center;
+            }
+
+            .info {
+                padding: 5px 10px;
+                font-size: 18px;
+                letter-spacing: 1px;
+            }
+        }
+        
+        .button {
+            cursor: pointer;
+            width: 30px;
+            height: 40px;
+            margin-bottom: 20px;
+
+            .trash {
+                width: 100%;
+                height: 100%;
+            }
+
+            &:hover {
+                width: 35px;
+                height: 45px;
+            }
+        }
+
+        &:hover {
+            transform: scale(1.03);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+        }
+    }
+    
+    .card:last-child {
+        margin-bottom: 20px;
+    }
+}
+
+@keyframes rotateAnimation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-1945deg);
+    }
+  }
+
+@keyframes translateAnimation {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(50px);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    article {
+    flex-direction: row;
+    gap: 25px;
+    padding-bottom: 30px;
+    .card:last-child {
+        margin-bottom: 0px;
+    }
+    }
+}
