@@ -200,7 +200,7 @@ article .card:last-child {
     transform: translate(100px, 400px) rotate(0deg);
   }
   to {
-    transform: translate(600px, -100px) rotate(-1260deg);
+    transform: translate(600px, -100px) rotate(-1890deg);
   }
 }
 @keyframes tooMuchAnimation {
@@ -208,7 +208,7 @@ article .card:last-child {
     transform: translate(600px, -100px) rotate(0deg);
   }
   to {
-    transform: translate(600px, 500px) rotate(-1260deg);
+    transform: translate(600px, 500px) rotate(-1890deg);
   }
 }
 @keyframes translateAnimation {
